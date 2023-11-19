@@ -1,0 +1,95 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+.judul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: linear-gradient(45deg, #000000, #0047ab);
+    padding: 20px;
+    color: white;
+    box-sizing: border-box;
+}
+
+.judul h1 {
+    margin: 0;
+}
+
+.judul h2 {
+    margin: 5px 0;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.main {
+    grid-column: 1 / span 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.board {
+    background-color: white;
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    border-collapse: collapse;
+
+}
+
+.board .x {
+    color: blue;
+}
+
+.board .o {
+    color: red;
+}
+
+
+
+.gold-text {
+    background-color: gold;
+    padding: 5px;
+
+}
+
+
+
+.board>div {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    background-color: rgb(255, 255, 255);
+    border: 10px solid rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    cursor: pointer;
+}
+
+button {
+    background-color: rgb(253, 7, 7);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
